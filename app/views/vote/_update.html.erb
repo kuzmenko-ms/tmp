@@ -1,0 +1,16 @@
+<% if can? :update, Vote %>
+ <%= form_for [@post, @post.vote] do |f| %>
+  <%= f.label :score, ":)"%>
+  <%= f.radio_button :score, "Up" %>
+  <%= f.label :score, ":("%>
+  <%= f.radio_button :score, "Down" %>
+  <br/>
+  <%= f.submit "Проголосовать" %>
+
+ <% end %>
+<% end %>
+
+<% if can? :clear, Vote %>
+ <%= link_to 'clear', post_vote_clear_path(@post, @post.vote), method: :delete %>
+<% end %>
+

@@ -1,0 +1,19 @@
+<h2>Регистрация</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+
+  <div><%= f.label :Почта %><br />
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :Пароль %><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :Повторите %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.submit "Готово" %></div>
+<% end %>
+
+<%= render "links" %>
