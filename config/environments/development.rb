@@ -1,6 +1,9 @@
 Example::Application.configure do
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -36,5 +39,8 @@ Example::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+<<<<<<< HEAD
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 end

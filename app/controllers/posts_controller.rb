@@ -5,14 +5,20 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+<<<<<<< HEAD
     @departments = Department.all
 
     #gon.departments = @departments
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
+<<<<<<< HEAD
       format.json { render json: @departments }
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
     end
   end
 

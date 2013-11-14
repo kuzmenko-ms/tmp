@@ -1,11 +1,19 @@
 <% if can? :update, Vote %>
  <%= form_for [@post, @post.vote] do |f| %>
+<<<<<<< HEAD
  <div id ="oo"><%= f.label :score, "+"%>
   <%= f.radio_button :score, "Up" %>
   <%= f.label :score, "-"%>
   <%= f.radio_button :score, "Down" %>
 </div>
   <br clear="all"/>
+=======
+  <%= f.label :score, ":)"%>
+  <%= f.radio_button :score, "Up" %>
+  <%= f.label :score, ":("%>
+  <%= f.radio_button :score, "Down" %>
+  <br/>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
   <%= f.submit "Проголосовать" %>
 
  <% end %>

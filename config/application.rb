@@ -55,6 +55,9 @@ module Example
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+<<<<<<< HEAD
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
   end
 end

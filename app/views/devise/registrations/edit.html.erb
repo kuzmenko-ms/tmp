@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 <h2>Редактирование профиля</h2>
 
 <div id = "reg">
+=======
+<h2>Изменить данные</h2>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
+<<<<<<< HEAD
   <%= f.label :email %><br />
 
   <%= f.email_field :email, :autofocus => true %>
@@ -21,12 +26,33 @@
   <%= f.password_field :password_confirmation ,placeholder: "Повторите новый пароль"%><br>
 
   <%= f.password_field :current_password ,placeholder: "Текущий пароль"%>
+=======
+  <div><%= f.label :Почта %><br />
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :Пароль %> <i>(Пароль,который хотите изменить)</i><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :Повтор %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :Новый %> <i>(И забудьте про старый)</i><br />
+  <%= f.password_field :current_password %></div>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
   <div><%= f.submit "Обновить" %></div>
 <% end %>
 
+<<<<<<< HEAD
 
 <p> <%= button_to "Удалить профиль", registration_path(resource_name), :data => { :confirm => "Вы уверены?" }, :method => :delete %></p>
 
 <%= link_to "Назад", :back %>
 </div>
+=======
+<h3>Не понравилось:(?</h3>
+
+<p><%= link_to "Удалить аккаунт", registration_path(resource_name), :confirm => "Вы уверены?", :method => :delete %>.</p>
+
+<%= link_to "Назад", :back %>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d

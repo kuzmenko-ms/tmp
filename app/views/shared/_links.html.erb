@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  <div id = "ups">
   <% if user_signed_in? %>
     <%= link_to "Мой профиль", edit_user_registration_path%>
@@ -11,3 +12,14 @@
 </div>
 <br>
     <br><br>
+=======
+<ul> 
+  <% if user_signed_in? %>
+    <li><%= link_to "Мой профиль", edit_user_registration_path%> </li>
+    <li><%= link_to "Выход", destroy_user_session_path%> </li>
+  <% else %>
+    <li><%= link_to "Регистрация", new_user_registration_path%> </li>
+    <li><%= link_to "Войти", new_user_session_path%> </li>
+  <% end %>
+</ul>    
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d

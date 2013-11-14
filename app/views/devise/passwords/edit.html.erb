@@ -5,7 +5,11 @@
   <%= f.hidden_field :reset_password_token %>
 
   <div><%= f.label :password, "New password" %><br />
+<<<<<<< HEAD
   <%= f.password_field :password, :autofocus => true %></div>
+=======
+  <%= f.password_field :password %></div>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
   <div><%= f.label :password_confirmation, "Confirm new password" %><br />
   <%= f.password_field :password_confirmation %></div>
@@ -13,4 +17,8 @@
   <div><%= f.submit "Change my password" %></div>
 <% end %>
 
+<<<<<<< HEAD
 <%= render "devise/shared/links" %>
+=======
+<%= render "links" %>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d

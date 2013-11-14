@@ -6,6 +6,7 @@
   <%= javascript_include_tag "application" %>
 
   <%= csrf_meta_tags %>
+<<<<<<< HEAD
 <div id="op">
 <%= link_to "Home",root_path%>|<%= link_to "Doc",root_path%>|<%= link_to "About",root_path%></div>
 <%= link_to image_tag("header.png"),root_path%>
@@ -16,6 +17,11 @@
 	</script>
 
 
+=======
+<%= image_tag "header.png" %>
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ2Ig5u_HGw6f_bZa7LcpYltiL3wXjI_E&sensor=false"></script>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
     <script>
 		var geocoder;
 		var map;
@@ -32,17 +38,29 @@
 		  }
 		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		  addMarker(latlng);
+<<<<<<< HEAD
 		}
 		
 		
 		// Add
 		function addMarker(location) {
 			var marker = new google.maps.Marker({
+=======
+		  infowindow.open(map,marker);
+		  infowindow.setContent('<div> <h4> Example of InfoWindow </h4> </div>');
+		}
+		
+		
+		// Add a marker to the map and push to the array.
+		function addMarker(location) {
+		  var marker = new google.maps.Marker({
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 			position: location,
 			map: map
 		  });
 		  marker.setAnimation(google.maps.Animation.BOUNCE);
 		  markers.push(marker);
+<<<<<<< HEAD
 
 		  var name = $('option:selected', $("#dep")).attr('name');
 		  var address = $('option:selected', $("#dep")).attr('address');
@@ -51,6 +69,8 @@
 
 		  infowindow.open(map,marker);
 		  infowindow.setContent('<div id="infowind"><h4>'+ name + '</h4><p> <strong> Address : </strong>'+ address +'</p><p> <strong> Email : </strong>'+ email +'</p><p> <strong> Phone number : </strong>'+ phonenumber +'</p></div>');
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 		}
 
 		// Sets the map on all markers in the array.
@@ -81,6 +101,7 @@
 		
 		var infowindow = new google.maps.InfoWindow({
 		  //content: contentString,
+<<<<<<< HEAD
 		  width: 700
 		});
 
@@ -91,6 +112,17 @@
 			if (status == google.maps.GeocoderStatus.OK) {
 			  map.setCenter(results[0].geometry.location);
 			  deleteMarkers();
+=======
+		  width: 300
+		});
+
+		function codeAddress() {
+		  var address = document.getElementById('address').value;
+		  geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+			  map.setCenter(results[0].geometry.location);
+			  //clearMarkers();
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 			  addMarker(results[0].geometry.location);			  
 			  infowindow.open(map,marker);
 			} else {
@@ -99,6 +131,7 @@
 		  });
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
+<<<<<<< HEAD
 
 		function selectChanged(address) {
 			alert(address);
@@ -111,5 +144,23 @@
 <body>
 <div id="header">
 </div>
+=======
+	</script>
+
+
+
+</head>
+<body>
+<div id="header">
+  <%= render "shared/links" %>
+</div>
+    <div id="panel">
+      <input id="address" type="textbox" value="Воронеж, Россия">
+      <input type="button" value="Geocode" onclick="codeAddress()">
+    </div>
+    <div id="map-canvas" style="margin-top: 5%;"></div>
+<%= yield %>
+
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 </body>
 </html>

@@ -7,9 +7,12 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
+<<<<<<< HEAD
 gem 'gon', '3.0.5'
 
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,8 +20,11 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
+<<<<<<< HEAD
 gem 'bootstrap-sass'
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
 

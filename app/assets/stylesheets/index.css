@@ -1,29 +1,42 @@
 html, body, #map-canvas {
+<<<<<<< HEAD
 
 	background-image: url(9.jpg);
         height: 90%;
+=======
+	background-image: url(9.jpg);
+        height: 81%;
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 		width: 80%;
         margin: 0px;
 		margin-top: 0%;
 		margin-left: 8%;
         padding: 0px
       }
+<<<<<<< HEAD
 label {
   display: inline-block;
   margin-bottom: 5px;
 }
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 	  
 #panel {
 	/*position: absolute;*/
 	margin-top: 5%;
 	/*left: 50%;*/
+<<<<<<< HEAD
 	width: 260px;
+=======
+	width: 235px;
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 	margin-left: 38%;
 	z-index: 5;
 	background-color: #fff;
 	padding: 5px;
 	border: 1px solid #999;
 }
+<<<<<<< HEAD
 #ups {
 float:right;
 }
@@ -44,3 +57,5 @@ color: rgb(0, 136, 204);
 
 
 
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d

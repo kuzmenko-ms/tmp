@@ -1,7 +1,10 @@
 Example::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+<<<<<<< HEAD
 DeviseMailer.sender = "kumaks09@yandex.ru"
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
   # Code is not reloaded between requests
   config.cache_classes = true

@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20131111182612) do
 
   create_table "departments", :force => true do |t|
@@ -21,6 +22,9 @@ ActiveRecord::Schema.define(:version => 20131111182612) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+=======
+ActiveRecord::Schema.define(:version => 20120306180230) do
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -38,8 +42,11 @@ ActiveRecord::Schema.define(:version => 20131111182612) do
 
   create_table "users", :force => true do |t|
     t.string   "name",                   :default => "", :null => false
+<<<<<<< HEAD
     t.string   "midname",                :default => "", :null => false
     t.string   "surname",                :default => "", :null => false
+=======
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"

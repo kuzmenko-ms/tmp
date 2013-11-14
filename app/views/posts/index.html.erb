@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <% if user_signed_in? %>
  <left>
@@ -43,6 +44,39 @@
   </tr>
 <% end %>
 
+=======
+<h1>Отзывы</h1>
+
+<table>
+  <tr>
+    <th>Пользователь</th>
+    <th>Тема</th>
+    <th>Отзыв об отделении</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.user.name %></td>
+    <td><%= post.title %></td>
+    <td><%= post.content %></td>
+    <% if can? :read, post %>
+      <td><%= link_to 'Подробнее', post %></td>
+    <% end %>
+    <% if can? :edit, post %>
+      <td><%= link_to 'Редактировать', edit_post_path(post) %></td>
+    <% end %>
+    
+    <% if can? :destroy, post %>
+      <td><%= link_to 'Удалить', post, confirm: 'Вы уверены?', method: :delete %></td>
+    <% end %>
+  
+  </tr>
+<% end %>
+</table>
+>>>>>>> e41dca022a876dbd781796ed5faf139d9cab1c7d
 
 <br />
 
