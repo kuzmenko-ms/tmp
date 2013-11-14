@@ -1,0 +1,13 @@
+ <div id = "ups">
+  <% if user_signed_in? %>
+    <%= link_to "Мой профиль", edit_user_registration_path%>
+        |
+    <%= link_to "Выход", destroy_user_session_path%> 
+  <% else %>
+    <%= link_to "Регистрация", new_user_registration_path%>
+	|
+    <%= link_to "Войти", new_user_session_path%> 
+  <% end %>
+</div>
+<br>
+    <br><br>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Police</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+  <%= csrf_meta_tags %>
+<div id="op">
+<%= link_to "Home",root_path%>|<%= link_to "Doc",root_path%>|<%= link_to "About",root_path%></div>
+<%= link_to image_tag("header.png"),root_path%>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ2Ig5u_HGw6f_bZa7LcpYltiL3wXjI_E&sensor=false"></script>
+
+<script id="my_vars_json" type="text/json">
+    	<%= @departments.to_json %>
+	</script>
+
+
+    <script>
+		var geocoder;
+		var map;
+		var markers = [];
+		google.maps.visualRefresh = true;
+
+		function initialize() {
+		  geocoder = new google.maps.Geocoder();
+		  var latlng = new google.maps.LatLng(51.6754966, 39.20888230000003);
+		  var mapOptions = {
+			zoom: 12,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		  }
+		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		  addMarker(latlng);
+		}
+		
+		
+		// Add
+		function addMarker(location) {
+			var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		  });
+		  marker.setAnimation(google.maps.Animation.BOUNCE);
+		  markers.push(marker);
+
+		  var name = $('option:selected', $("#dep")).attr('name');
+		  var address = $('option:selected', $("#dep")).attr('address');
+		  var email = $('option:selected', $("#dep")).attr('email');
+		  var phonenumber = $('option:selected', $("#dep")).attr('phonenumber');
+
+		  infowindow.open(map,marker);
+		  infowindow.setContent('<div id="infowind"><h4>'+ name + '</h4><p> <strong> Address : </strong>'+ address +'</p><p> <strong> Email : </strong>'+ email +'</p><p> <strong> Phone number : </strong>'+ phonenumber +'</p></div>');
+		}
+
+		// Sets the map on all markers in the array.
+		function setAllMap(map) {
+		  for (var i = 0; i < markers.length; i++) {
+			markers[i].setMap(map);
+			//markers[i].setAnimation(google.maps.Animation.BOUNCE);
+		  }
+		}
+
+		// Removes the markers from the map, but keeps them in the array.
+		function clearMarkers() {
+		  setAllMap(null);
+		}
+
+		// Shows any markers currently in the array.
+		function showMarkers() {
+		  setAllMap(map);
+		}
+
+		// Deletes all markers in the array by removing references to them.
+		function deleteMarkers() {
+		  clearMarkers();
+		  markers = [];
+		}
+		
+		//var contentString = '<div> <h4> Example of InfoWindow </h4> </div>';
+		
+		var infowindow = new google.maps.InfoWindow({
+		  //content: contentString,
+		  width: 700
+		});
+
+		function codeAddress() {
+		  //var address = document.getElementById('address').value;
+		  var address = $('option:selected', $("#dep")).attr('address'); 
+		  geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+			  map.setCenter(results[0].geometry.location);
+			  deleteMarkers();
+			  addMarker(results[0].geometry.location);			  
+			  infowindow.open(map,marker);
+			} else {
+			  alert('Geocode was not successful for the following reason: ' + status);
+			}
+		  });
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+		function selectChanged(address) {
+			alert(address);
+		}
+	</script>
+<%= render "shared/links" %>
+
+	<%= yield %>
+</head>
+<body>
+<div id="header">
+</div>
+</body>
+</html>

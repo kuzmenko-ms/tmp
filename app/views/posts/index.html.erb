@@ -1,0 +1,51 @@
+
+<% if user_signed_in? %>
+ <left>
+    <select size="1" id="dep" onchange=codeAddress()>
+	    <% @departments.each do |department| %>
+	    	<option name = "<%= department.name %>" email = "<%= department.email %>" address = "<%= department.address %>" phonenumber = "<%= department.phonenumber %>"><%= department.name %></option>
+	    <% end %>
+    </select>
+    </left>  
+   <div id="map-canvas" style="margin-top: 5%; border: 1px solid #ccd;"></div>
+
+  <% end %>
+<div id="header">
+
+
+<%= yield %>
+</div>
+
+
+</body>
+
+<h1>Отзывы</h1>
+
+<% @posts.each do |post| %>
+  <div id ="content"><tr>Пользователь <br></div>
+   <%= post.user.surname %> <%= post.user.name %> <%= post.user.midname%> <br>
+	<div id ="content">Тема<br></div>
+    <%= post.title %><br>
+<div id ="content">Отзыв об отделении<br></div>
+    <%= post.content %><br>
+    <% if can? :read, post %>
+      <%= link_to 'Подробнее', post %>
+    <% end %>
+    <% if can? :edit, post %>
+      <%= link_to 'Редактировать', edit_post_path(post) %>|
+    <% end %>
+    
+    <% if can? :destroy, post %>
+      <%= link_to 'Удалить', post, confirm: 'Вы уверены?', method: :delete %>
+    <% end %>
+  _________________________________________________________________________________________________________
+
+  </tr>
+<% end %>
+
+
+<br />
+
+<% if can? :create, Post %>
+  <%= link_to 'Новый отзыв', new_post_path %>
+<% end %>
