@@ -26,7 +26,8 @@
 
 <% @posts.each do |post| %>
   <div id ="content"><tr>Пользователь <br></div>
-    <%= post.user.name %><br>
+<%= image_tag post.user.avatar.url("medium") %>
+    <%= post.user.name %> <%= post.user.midname %> <%= post.user.surname %><br>
 	<div id ="content">Тема<br></div>
     <%= post.title %><br>
 <div id ="content">Отзыв об отделении<br></div>

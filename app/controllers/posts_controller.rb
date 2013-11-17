@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+  @departments = Department.all
     @post = Post.find(params[:id])
 
     respond_to do |format|
@@ -41,12 +42,14 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+  @departments = Department.all
     @post = Post.find(params[:id])
   end
 
   # POST /posts
   # POST /posts.json
   def create
+  @departments = Department.all
     @post = current_user.posts.new(params[:post])
 
     respond_to do |format|
@@ -63,7 +66,9 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
+  @departments = Department.all
     @post = Post.find(params[:id])
+     
 
     respond_to do |format|
       if @post.update_attributes(params[:post])

@@ -9,7 +9,8 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :name,:midname,:surname, :password_confirmation, :remember_me
-
+       attr_accessible :avatar
+    has_attached_file :avatar,:styles => { :small => '28x28#', :medium => '60x60#' , :big => '100x100#'}
   has_many :users_roles, :dependent => :destroy
   has_many :roles, :through => :users_roles 
   has_many :posts, :dependent => :destroy
@@ -26,4 +27,6 @@ class User < ActiveRecord::Base
     def create_role
       self.roles << Role.find_by_name(:user)  if ENV["RAILS_ENV"] != 'test' 
     end
+
+
 end
