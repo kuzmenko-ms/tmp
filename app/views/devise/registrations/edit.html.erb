@@ -21,6 +21,7 @@
   <%= f.password_field :password_confirmation ,placeholder: "Повторите новый пароль"%><br>
 
   <%= f.password_field :current_password ,placeholder: "Текущий пароль"%>
+<%= f.file_field :avatar %>
 
   <div><%= f.submit "Обновить" %></div>
 <% end %>
