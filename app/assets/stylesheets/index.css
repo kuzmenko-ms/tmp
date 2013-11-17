@@ -1,0 +1,54 @@
+html, body, #map-canvas {
+
+	background-image: url(9.jpg);
+        height: 90%;
+		width: 80%;
+        margin: 0px;
+		margin-top: 0%;
+		margin-left: 8%;
+        padding: 0px
+      }
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+	  
+#panel {
+	
+display: none;
+			}
+		.btn-slide {
+			
+			}
+		.active {
+			background: #000000;
+			
+			}
+}
+
+#ups {
+float:right;
+}
+#op {
+float:right;
+}
+#reg {
+margin:0 40% 0 40%;
+  width:25%;
+}
+#content{
+font-variant:small-caps;
+font-weight:bold;
+font-size:13px;
+color: rgb(0, 136, 204);
+  
+}
+
+#content2{
+
+font-size:10px;
+
+  
+}
+

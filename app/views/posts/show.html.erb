@@ -1,0 +1,21 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Отзыв:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Что и как:</b>
+  <%= @post.content %>
+</p>
+
+<h3>Отношение <%= @post.vote.score %></h3>
+
+<%= render 'vote/update' %>
+
+
+
+<%= link_to 'Изменить', edit_post_path(@post) %> |
+<%= link_to 'Назад', posts_path %>
