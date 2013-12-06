@@ -1,17 +1,36 @@
 
 <% if user_signed_in? %>
- <left>
-    <select size="1" id="dep" onchange=codeAddress()>
-	    <% @departments.each do |department| %>
-	    	<option name = "<%= department.name %>" email = "<%= department.email %>" address = "<%= department.address %>" phonenumber = "<%= department.phonenumber %>"><%= department.name %></option>
-	    <% end %>
-    </select><% if can? :create, Post %>
-  <%= link_to 'Новый отзыв', new_post_path %>
+ <right>
+
+<script>
+$(function() {
+  $(document).on('change', '[data-question]', function() {
+    // this == the element that fired the change event
+    codeAddress();
+  });
+});
+</script>
+<div class="data"> Выберите отделение: </data>
+</div>
+<%= form_tag("/posts/search/", method: "get", remote: true) do %>
+  <%= select_tag(:dep, options_for_select(@departments.map {|x| 
+			[x.name, x.name, {'email' => x.email, 'address' => x.address, 'phonenumber' => x.phonenumber, 'name' => x.name}] 
+	}),  data: { question: true }) %>
+  <%= submit_tag("Показать") %>
 <% end %>
-    </left>  
+
+
+   <% if can? :create, Post %>
+  <%= link_to submit_tag("Новый отзыв"), new_post_path %>
+<% end %>
+    </right>  
    <div id="map-canvas" style="margin-top: 5%; border: 1px solid #ccd;"></div>
 
   <% end %>
+
+
+
+
 <div id="header">
 
 
@@ -21,34 +40,39 @@
 
 </body>
 
+
+
 <a href="" class="btn-slide"><h1>Отзывы↕ </h1></a>
 	<div id="panel">
 
 <% @posts.each do |post| %>
-  <div id ="content"><tr>Пользователь <br></div>
-<%= image_tag post.user.avatar.url("medium") %>
-    <%= post.user.name %> <%= post.user.midname %> <%= post.user.surname %><br>
-	<div id ="content">Тема<br></div>
-    <%= post.title %><br>
-<div id ="content">Отзыв об отделении<br></div>
-    <%= post.content %><br>
-    <% if can? :read, post %>
-      <%= link_to 'Подробнее', post %>|
-    <% end %>
-    <% if can? :edit, post %>
-      <%= link_to 'Редактировать', edit_post_path(post) %>|
-    <% end %>
-    
-    <% if can? :destroy, post %>
-      <%= link_to 'Удалить', post, confirm: 'Вы уверены?', method: :delete %>
-    <% end %>
-  _________________________________________________________________________________________________________
-
-  </tr>
+<%= render post%>
 <% end %>
 </div>
 
 
 <br />
-
+<table  width="100%">
+<tr>
+    <td height="110" bgcolor="#999999" bordercolorlight="#00CCFF">    <p>  
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to image_tag("newsevents.png"),root_path%>
+    <div id="text3"> &nbsp;&nbsp;&nbsp;  
+     <div id ="news"> «В Хохольском районе полицейскими изъята партия наркотиков у местного жителя
+        В ходе проведенного обыска в присутствии понятых оперативники обнаружили и изъяли &nbsp;&nbsp;&nbsp; пакет с веществом растительного происхождения. По заключению эксперта, изъятое является наркотическим средством – марихуана, в крупном размере.»</p></div>
+      <p>&nbsp;</p>
+    </div>
+    </p></td>
+    </tr>
+</table>
+<table width="100%" border="0">
+        <tr>
+          <td align="center"><%= link_to image_tag("ban.png"),root_path%>
+          <%= link_to image_tag("6.png"),root_path%></td>
+        </tr>
+      </table>
+  </td>
+  </TR>
+  
+</table>
 

@@ -3,6 +3,17 @@ class PostsController < ApplicationController
   load_and_authorize_resource
   # GET /posts
   # GET /posts.json
+
+  def search
+    
+    @data = Post.all.find_all{|x| x.dep == params[:dep]}
+    puts ">>>>>>", params[:dep], @data.size
+    respond_to do |format|
+      format.js   {}
+      format.json {  }
+    end
+  end
+
   def index
     @posts = Post.all
     @departments = Department.all
@@ -19,7 +30,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-  @departments = Department.all
+    @departments = Department.all
     @post = Post.find(params[:id])
 
     respond_to do |format|

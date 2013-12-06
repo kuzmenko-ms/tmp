@@ -1,11 +1,13 @@
-Example::Application.routes.draw do
-  
+Example::Application.routes.draw do  
+get "posts/search/" 	
   resources :posts do
     resources :vote, :only => [:update] do
       delete 'clear'
     end
   end
 
+  # match "/search" => "post#search"
+  
   devise_for :users
   root :to => "posts#index"
 

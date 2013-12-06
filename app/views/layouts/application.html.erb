@@ -10,7 +10,28 @@
 <%= link_to "Home",root_path%>|<%= link_to "Doc",root_path%>|<%= link_to "About",root_path%></div>
 <%= link_to image_tag("header.png"),root_path%><%= render "shared/links" %> 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ2Ig5u_HGw6f_bZa7LcpYltiL3wXjI_E&sensor=false"></script>
-
+<script type="text/javascript">
+ 
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
 <script id="my_vars_json" type="text/json">
     	<%= @departments.to_json %>
 	</script>
@@ -115,6 +136,7 @@
 	<%= yield %>
 </head>
 <body>
+<div id="toTop">^Вверх</div>
 <div id="header">
 </div>
 </body>
