@@ -1,3 +1,21 @@
+<div id="container">
+
+	<div id="content">
+	
+		<div id="slider">
+			<ul>				
+				<li><a href=""><%= image_tag("01.jpg")%></a></li>
+				<li><a href=""><%= image_tag("02.jpg")%></a></li>
+				<li><a href=""><%= image_tag("03.jpg")%></a></li>
+				<li><a href=""><%= image_tag("04.jpg")%></a></li>
+				<li><a href=""><%= image_tag("05.jpg")%></a></li>		
+			</ul>
+		</div>
+			
+	
+	</div>
+
+</div>
 
 <% if user_signed_in? %>
  <right>
@@ -51,7 +69,10 @@ $(function() {
 </div>
 
 
-<br />
+  </td>
+  </TR>
+  
+</table>
 <table  width="100%">
 <tr>
     <td height="110" bgcolor="#999999" bordercolorlight="#00CCFF">    <p>  
@@ -65,14 +86,3 @@ $(function() {
     </p></td>
     </tr>
 </table>
-<table width="100%" border="0">
-        <tr>
-          <td align="center"><%= link_to image_tag("ban.png"),root_path%>
-          <%= link_to image_tag("6.png"),root_path%></td>
-        </tr>
-      </table>
-  </td>
-  </TR>
-  
-</table>
-

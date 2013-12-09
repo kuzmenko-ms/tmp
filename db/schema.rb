@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(:version => 20131117175502) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "nickname"
+    t.string   "provider"
+    t.string   "url"
+    t.string   "username"
     t.string   "name",                   :default => "", :null => false
     t.string   "midname",                :default => "", :null => false
     t.string   "surname",                :default => "", :null => false

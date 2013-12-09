@@ -11,6 +11,14 @@
 <%= link_to image_tag("header.png"),root_path%><%= render "shared/links" %> 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ2Ig5u_HGw6f_bZa7LcpYltiL3wXjI_E&sensor=false"></script>
 <script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true
+			});
+		});	
+	</script>
+<script type="text/javascript">
  
 $(function() {
 $(window).scroll(function() {
@@ -132,12 +140,14 @@ $('body,html').animate({scrollTop:0},800);
 		}
 	</script>
 
-
 	<%= yield %>
 </head>
 <body>
 <div id="toTop">^Вверх</div>
 <div id="header">
+</div>
+<div id = "ppp">
+&copy; km-studio 2013
 </div>
 </body>
 </html>

@@ -32,6 +32,8 @@ gem 'rmagick'
 gem 'jquery-rails'
 gem 'devise'
 gem 'cancan'
+gem 'omniauth'
+gem 'omniauth-vkontakte'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -62,4 +64,5 @@ group :test, :development do
   gem "factory_girl"
   gem "factory_girl_rails"
   gem "database_cleaner"
+
 end 

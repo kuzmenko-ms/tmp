@@ -1,4 +1,6 @@
 Example::Application.routes.draw do  
+  get "omniauth_callbacks/vkontakte"
+
 get "posts/search/" 	
   resources :posts do
     resources :vote, :only => [:update] do
@@ -11,6 +13,10 @@ get "posts/search/"
   devise_for :users
   root :to => "posts#index"
 
+
+ devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  resources :users, :only => [:index, :destroy]
+  root :to => 'users#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -68,3 +74,6 @@ get "posts/search/"
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+
+
+
