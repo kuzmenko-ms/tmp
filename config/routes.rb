@@ -1,5 +1,5 @@
 Example::Application.routes.draw do  
-  get "omniauth_callbacks/vkontakte"
+  
 
 get "posts/search/" 	
   resources :posts do
@@ -12,7 +12,7 @@ get "posts/search/"
   
   devise_for :users
   root :to => "posts#index"
-
+get "omniauth_callbacks/vk"
 devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation:
