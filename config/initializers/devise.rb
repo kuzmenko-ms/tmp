@@ -5,7 +5,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
  
-config.omniauth :vkontakte, '4047002', 'jldO0rIEfS7nAb2k9vkd'
+config.omniauth :vk, '4047002', 'jldO0rIEfS7nAb2k9vkd'
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 

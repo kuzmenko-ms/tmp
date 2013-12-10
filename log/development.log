@@ -2316,3 +2316,25 @@ ActionController::RoutingError (No route matches [GET] "/avatars/medium/missing.
 
 
   Rendered /home/kuzmenko/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20120305171804)
+Migrating to CreatePosts (20120305172820)
+Migrating to CreateRoles (20120305173848)
+Migrating to CreateUsersRoles (20120305173900)
+Migrating to CreateVotes (20120306144911)
+Migrating to CreateUsersVotes (20120306154220)
+Migrating to AddReferneces (20120306180230)
+Migrating to CreateDepartments (20131111182612)
+Migrating to AddAttachmentAvatarToUsers (20131117175502)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("departments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("posts")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_posts_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("roles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users_roles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users_votes")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("votes")[0m
