@@ -11,11 +11,7 @@ get "posts/search/"
   # match "/search" => "post#search"
   
  get "omniauth_callbacks/vkontakte"
-
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }   resources :users, :only => [:index, :destroy]
-
-
-
   devise_scope :users do
      get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru' 
  end
