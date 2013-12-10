@@ -4,10 +4,14 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
- 
-require "omniauth-vkontakte"
 config.omniauth :vkontakte, "4047002", "jldO0rIEfS7nAb2k9vkd"
   # Configure the class responsible to send e-mails.
+  # config.mailer = "Devise::Mailer"
+config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
+
+  # Automatically apply schema changes in tableless databases
+  config.apply_schema = false
+ # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 
   # Automatically apply schema changes in tableless databases
@@ -86,7 +90,7 @@ config.omniauth :vkontakte, "4047002", "jldO0rIEfS7nAb2k9vkd"
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "d278f4962f5c338de7bea4fed02166c1c5761764cdfec76a190029768289aba6b3f3cfb16a6594b33642f09d8f76b5ae6d27ea92f379ef8c8714a72c65ae7410"
+  # config.pepper = "c99a439696774c4cb1c30263d5d8037e5b03d8bea2ffa35515b68cababa00bd8228c974c99207d73fcf87347e4823791e3177ff4cd2e07df291cc05b6ee24041"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -206,7 +210,7 @@ config.omniauth :vkontakte, "4047002", "jldO0rIEfS7nAb2k9vkd"
   # config.navigational_formats = ["*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :get
+  config.sign_out_via = :delete
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
