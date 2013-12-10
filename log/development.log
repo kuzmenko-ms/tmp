@@ -2338,3 +2338,809 @@ Migrating to AddAttachmentAvatarToUsers (20131117175502)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users_roles")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users_votes")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("votes")[0m
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.5ms)
+  Rendered shared/_links.html.erb (1.3ms)
+Completed 200 OK in 221ms (Views: 125.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /application.css - 304 Not Modified (51ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /index.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /vote.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /posts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /vote.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:46 +0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:10:47 +0400
+Served asset /9.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:10:47 +0400
+Served asset /header.png - 304 Not Modified (3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_links.html.erb (0.6ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /4.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /index.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /vote.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:10:49 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:10:50 +0400
+Served asset /4.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/vkontakte" for 127.0.0.1 at 2013-12-10 14:10:51 +0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+  Rendered shared/_links.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:10:56 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:10:59 +0400
+Served asset /4.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+  Rendered shared/_links.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:11:26 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:11:28 +0400
+Served asset /4.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:14:34 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.8ms)
+  Rendered shared/_links.html.erb (1.4ms)
+Completed 200 OK in 224ms (Views: 128.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /application.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /vote.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /index.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /vote.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /9.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:14:35 +0400
+Served asset /header.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:14:37 +0400
+Served asset /4.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/auth/vkontakte" for 127.0.0.1 at 2013-12-10 14:14:41 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Processing by PostsController#index as HTML
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'admin' LIMIT 1[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'user' LIMIT 1
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_post.html.erb (34.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_post.html.erb (1.7ms)
+  Rendered posts/index.html.erb within layouts/application (39.4ms)
+  Rendered shared/_links.html.erb (0.4ms)
+Completed 200 OK in 298ms (Views: 50.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:05 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/01.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /01.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/02.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /02.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/04.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /04.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/05.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /05.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/03.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /03.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/avatars/medium/missing.png" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+
+ActionController::RoutingError (No route matches [GET] "/avatars/medium/missing.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/kuzmenko/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/newsevents.png" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /newsevents.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Processing by PostsController#index as HTML
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'admin' LIMIT 1[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'user' LIMIT 1
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_post.html.erb (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_post.html.erb (1.8ms)
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+  Rendered shared/_links.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 15.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/medium/missing.png" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+
+ActionController::RoutingError (No route matches [GET] "/avatars/medium/missing.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/kuzmenko/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:20:06 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Processing by PostsController#index as HTML
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'admin' LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" IS NULL AND "roles"."name" = 'user' LIMIT 1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_post.html.erb (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_post.html.erb (4.8ms)
+  Rendered posts/index.html.erb within layouts/application (18.2ms)
+  Rendered shared/_links.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/01.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /01.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/02.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /02.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/03.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /03.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/04.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /04.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/05.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /05.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/medium/missing.png" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+
+ActionController::RoutingError (No route matches [GET] "/avatars/medium/missing.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/kuzmenko/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/newsevents.png" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /newsevents.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /index.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:20:07 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/01.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /01.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/02.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /02.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/03.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /03.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/04.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /04.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/05.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /05.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/medium/missing.png" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+
+ActionController::RoutingError (No route matches [GET] "/avatars/medium/missing.png"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/kuzmenko/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/kuzmenko/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/newsevents.png" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /newsevents.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_links.html.erb (0.6ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /users/omniauth_callbacks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vote.css?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /vote.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/easySlider1.7.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /easySlider1.7.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /users/omniauth_callbacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vote.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /vote.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/4.png" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /4.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/9.jpg" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/header.png" for 127.0.0.1 at 2013-12-10 14:20:09 +0400
+Served asset /header.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/vkontakte" for 127.0.0.1 at 2013-12-10 14:20:12 +0400
