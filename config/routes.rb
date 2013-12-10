@@ -1,5 +1,5 @@
 Example::Application.routes.draw do  
-  get "omniauth_callbacks/vkontakte"
+  get "omniauth_callbacks/vk"
 
 get "posts/search/" 	
   resources :posts do
