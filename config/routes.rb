@@ -13,10 +13,10 @@ get "posts/search/"
   devise_for :users
   root :to => "posts#index"
 
-
- devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users, :only => [:index, :destroy]
   root :to => 'users#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
